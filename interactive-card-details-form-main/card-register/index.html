@@ -41,8 +41,7 @@
             
           </div>
         
-        </div>
-  
+        </div>  
            <div class="image-card-back">
               <img src="../images/bg-card-back.png" alt="">
               <P>000</P>
@@ -54,25 +53,26 @@
         
         <div class="data1">
           <label for="cardholder"> CARDHOLDER NAME </label> <br>
-          <input type="text" name="" id="card-holder">
+          <input onkeypress="return apenasLetras(event)"  type="text" name="" id="card-holder" placeholder="Nome do titular do cartão" title="Nome do titular do cartão">
         </div> 
           <div class="data2">
             <label for="cardnumber"> CARD NUMBER </label><br>
-            <input type="text" name="" id="card-number">
+            <input onkeypress="return apenasNumeros(event)"   type="text" name="" id="card-number"placeholder="card-number" title="Numero do cartão">
           </div>
       
           <div class="data3">
             <div class="date">
-              <label for="cardExp"> EXP.DATE (MM/YY) </label> 
+              <label  for="cardExp"> EXP.DATE (MM/YY) </label> 
             </div>
               <div class="date-inputs">
-                <input class="monthYear" type="text" name="" id="card-MM">
-                <input  class="monthYear" type="text" name="" id="card-YY"> 
+          </div>
+          <input onkeypress="return apenasNumeros(event)" class="monthYear" type="text" name="" id="card-MM" placeholder="MM" title="Mês de expiração do cartão">
+          <input onkeypress="return apenasNumeros(event)"  class="monthYear" type="text" name="" id="card-YY" placeholder="YY" title="Ano de expiração do cartão">
               </div>
             
             <div class="cvc">
-              <label for="cvc">CVC</label> 
-              <input type="text" name="" id="card-Cvc">
+              <label class="codigo" for="cvc">CVC</label> 
+              <input onkeypress="return apenasNumeros(event)" type="text" name="" id="card-Cvc" placeholder="CVC" title="Código de segurança do cartão">
             </div>
           </div>
             
@@ -118,6 +118,6 @@
   </div>
 
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
