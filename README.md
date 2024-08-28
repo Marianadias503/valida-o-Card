@@ -5,3 +5,4 @@
 
 Projeto desenvolvido durante meus estudos em Javascript
 
+**Acesso:** Clone o projeto em sua máquina e abra em seu ambiente de desenvolvimento
